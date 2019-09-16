@@ -9,7 +9,7 @@ package aula3;
  *
  * @author 1822220623
  */
-public class Aula3 {
+public class ContaBanco {
 
     /**
      * @param args the command line arguments
