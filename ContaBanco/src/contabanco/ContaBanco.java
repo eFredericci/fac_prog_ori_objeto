@@ -30,6 +30,20 @@ public class ContaBanco {
     public void pagarMensal() {
         
     }
+    public void ContaBanco () {
+        this.saldo = 0;
+        this.status = false;
+    }
+    public void setNumConta(int n){
+        this.numConta = n;
+    }
+    public int getNumConta(){
+        return this.numConta;
+    }
+    public String getDono() {
+        return this.dono;
+    }
+    
     /**
      * @param args the command line arguments
      */
