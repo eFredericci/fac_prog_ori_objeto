@@ -9,6 +9,7 @@ package aula2;
  *
  * @author aluno
  */
+//<editor-fold defaultstate="collapsed" desc="/*comment*/">
 class Caneta {
     public String modelo;
     public String cor;
@@ -16,11 +17,11 @@ class Caneta {
     protected float carga;
     protected boolean tampada;
     public void status(){
-            System.out.println("Modelo: " + this.modelo);
-            System.out.println("Uma caneta " + this.cor);
-            System.out.println("Ponta: " + this.ponta);
-            System.out.println("Carga: " + this.carga);
-            System.out.println("Está tampada? " + this.tampada);
+        System.out.println("Modelo: " + this.modelo);
+        System.out.println("Uma caneta " + this.cor);
+        System.out.println("Ponta: " + this.ponta);
+        System.out.println("Carga: " + this.carga);
+        System.out.println("Está tampada? " + this.tampada);
     }
     public void rabiscar (){
         if (this.tampada == true){
@@ -35,3 +36,4 @@ class Caneta {
     }
     
 }
+//</editor-fold>
