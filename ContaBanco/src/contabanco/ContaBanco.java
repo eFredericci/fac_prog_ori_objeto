@@ -16,15 +16,56 @@ public class ContaBanco {
     private float saldo;
     private boolean status;
     public void abrirConta() {
-        
+        if (tipo.equals("CC")) {
+            saldo = saldo + 50;}
+        else {
+            saldo = saldo + 150;
+        }        
     }
     public void fecharConta() {
+        if (saldo > 0) {
+            println("Conta com dinheiro");
+        }
+        if (saldo < 0){
+            println("Saldo em débito");
+    }
+        else {
+            setStatus(false);
+        }
         
     }
-    public void depositar() {
+
+    /**
+     *
+     * @param v
+     */
+    public void depositar(float v) {
+        if (status = true){
+            setSaldo(v + getSaldo());
+        } else {
+            println("Impossível depositar");
+        }
         
     }
-    public void sacar() {
+
+    /**
+     *
+     * @param v
+     */
+    public void sacar(float v) {    
+        
+        if (status = true){
+            if (saldo > v) {
+                saldo = (saldo + v);
+            }
+            else {
+                println("Saldo insuficiente");               
+            }
+        }
+        else {
+            println("Impossivel sacar");
+        }
+            
         
     }
     public void pagarMensal() {
@@ -40,6 +81,9 @@ public class ContaBanco {
     public int getNumConta(){
         return this.numConta;
     }
+    public String getTipo() {
+        return this.tipo;
+    }
     public String getDono() {
         return this.dono;
     }
@@ -49,6 +93,22 @@ public class ContaBanco {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+    }
+
+    private void setStatus(boolean b) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private void println(String saldo_em_débito) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private String getSaldo() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private void setSaldo(String string) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }
