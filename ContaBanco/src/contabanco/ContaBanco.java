@@ -11,10 +11,11 @@ package contabanco;
  */
 public class ContaBanco {
     public int numConta;
-    private String tipo;
-    private String dono;
-    private float saldo;
+    String tipo;
+    String dono;
+    float saldo;
     private boolean status;
+    
     public void abrirConta() {
         if (tipo.equals("CC")) {
             saldo = saldo + 50;}
@@ -108,6 +109,14 @@ public class ContaBanco {
     }
 
     private void setSaldo(String string) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void depositar() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void show() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
